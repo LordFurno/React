@@ -1,11 +1,11 @@
 import React from 'react';
 
 const itemList = [
-  { name: 'Item1', description: 'This is a description' },
-  { name: 'Item2', description: 'This is a description' },
-  { name: 'Item3', description: 'This is a description' },
-  { name: 'Item4', description: 'This is a description' },
-  { name: 'Item5', description: 'This is a description' },
+  { name: 'Item1', description: 'This is a description', price: "price" },
+  { name: 'Item2', description: 'This is a description', price: "price" },
+  { name: 'Item3', description: 'This is a description', price: "price" },
+  { name: 'Item4', description: 'This is a description', price: "price" },
+  { name: 'Item5', description: 'This is a description', price: "price" },
 ];
 
 function Items() {
@@ -17,6 +17,7 @@ function Items() {
           <div index={i}>
             <div>{v.name}</div>
             <div>{v.description}</div>
+            <div>{v.price}</div>
           </div>
         );
       })}
